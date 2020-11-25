@@ -80,4 +80,8 @@ class Index
         dump($ins);
         dump($redis);die;
     }
+    function getTest()
+    {
+        echo 'swoole_other';
+    }
 }
