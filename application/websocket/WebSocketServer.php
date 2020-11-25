@@ -82,8 +82,7 @@ class WebSocketServer extends Server
         echo "onMessage:\n";
         echo "receive from {$frame->fd}:{$frame->data},opcode:{$frame->opcode},fin:{$frame->finish}\n";
         $server->push($frame->fd, "this is jsw server");
-
-	// ActionHandle::instance()->handle($server, $frame);
+    	ActionHandle::instance()->handle($server, $frame);
     }
 
     public function onClose($server, $fd) {
