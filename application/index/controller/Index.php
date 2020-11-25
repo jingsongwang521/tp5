@@ -84,5 +84,6 @@ class Index
     {
         echo 'swoole_other';
         echo '1111';
+        echo '2222';
     }
 }
