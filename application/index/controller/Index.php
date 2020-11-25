@@ -83,5 +83,6 @@ class Index
     function getTest()
     {
         echo 'swoole_other';
+        echo '1111';
     }
 }
